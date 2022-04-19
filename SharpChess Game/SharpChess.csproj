@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<OutputType>WinExe</OutputType>
+
+		<ApplicationIcon>SharpChessIcon.ico</ApplicationIcon>
+		<AssemblyName>SharpChess2</AssemblyName>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<ApplicationVersion>2.0.0</ApplicationVersion>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Update="System">
+			<Name>System</Name>
+		</Reference>
+		<Reference Update="System.Data">
+			<Name>System.Data</Name>
+		</Reference>
+		<Reference Update="System.Drawing">
+			<Name>System.Drawing</Name>
+		</Reference>
+		<Reference Update="System.Xml">
+			<Name>System.XML</Name>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Cursors\BlackBishop.cur" />
+		<EmbeddedResource Include="Cursors\BlackKing.cur" />
+		<EmbeddedResource Include="Cursors\BlackKnight.cur" />
+		<EmbeddedResource Include="Cursors\BlackPawn.cur" />
+		<EmbeddedResource Include="Cursors\BlackQueen.cur" />
+		<EmbeddedResource Include="Cursors\BlackRook.cur" />
+		<EmbeddedResource Include="Cursors\WhiteBishop.cur" />
+		<EmbeddedResource Include="Cursors\WhiteKing.cur" />
+		<EmbeddedResource Include="Cursors\WhiteKnight.cur" />
+		<EmbeddedResource Include="Cursors\WhitePawn.cur" />
+		<EmbeddedResource Include="Cursors\WhiteQueen.cur" />
+		<EmbeddedResource Include="Cursors\WhiteRook.cur" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Properties\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharpChess.Model\SharpChess.Model.csproj" />
+	</ItemGroup>
+	<PropertyGroup>
+	  <IsPublishable>False</IsPublishable>
+	</PropertyGroup>
+</Project>
